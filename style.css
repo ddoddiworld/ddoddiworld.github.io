@@ -1,0 +1,226 @@
+/* login Page */
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(-90deg, #3a42b4, #ff5e6d, #3c1ad2, #23d5ab);
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+    color: #fff;
+    height: 100vh;
+}
+
+body::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: inline-block;
+    background: url('/img/bg2.png') no-repeat 50% 50%;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    z-index: -10;
+}
+
+btn:hover {
+    cursor: pointer;
+}
+
+.intro_tit {
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.id,
+.pw {
+    display: block;
+    margin: 5px;
+}
+
+.id input,
+.pw input {
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.xi-close {
+    color: navy;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
+
+.intro_btn {
+    margin: 25px auto 20px;
+}
+
+.intro_btn .login_btn {
+    margin: 5px auto;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: navy;
+    color: #fff;
+    width: 250px;
+    padding: 10px;
+}
+
+.intro_btn .join_btn {
+    margin: 5px auto;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: #fff;
+    color: navy;
+    border: 2px solid navy;
+    width: 250px;
+    padding: 10px;
+}
+
+.joinBox {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.joinBox.active {
+    display: none;
+}
+
+.joinBox .join_tit {
+    color: navy;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.joinId,
+.joinPw {
+    display: block;
+    margin: 5px;
+}
+
+.joinId input,
+.joinPw input {
+    border: 2px solid navy;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.join_btn {
+    margin: 5px auto;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    background-color: navy;
+    color: #fff;
+    width: 250px;
+    padding: 10px;
+    margin: 20px auto
+}
+
+.login_box input[type="text"] {
+    border: none;
+    padding: 10px 15px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.enter_btn {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: navy;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    margin: 15px;
+}
